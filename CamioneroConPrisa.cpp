@@ -7,6 +7,8 @@ gasolineras que hay en su ruta. Como va con prisa, el camionero
 desea detenerse a abastecer gasolina el menor número de veces posible.
 Diseñe un algoritmo eficiente que determine en qué gasolineras
 tiene que parar el camionero.
+Solucion:
+Complejidad O(n)
 */
 
 #include <iostream>
@@ -16,11 +18,11 @@ using namespace std;
 
 void calcularParadas(int n, int *mapa, int gasolineras){
     int kmRecorridos = 0;
-    cout<<"Se tiene que parar en las gases: ";
+    cout<<"Se tiene que parar en las gases: "<<endl;
     for (int i = 0; i < gasolineras-1; i++){
         if (n-kmRecorridos <= (mapa[i+1]+mapa[i]))
         {
-            cout<<" "<<i+1;//Imprimiendo donde tiene que cargar gas
+            cout<<" "<<i+1<<endl;//Imprimiendo donde tiene que cargar gas
             kmRecorridos = 0;
         } else{
            /*Puede continuar*/
