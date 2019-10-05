@@ -7,6 +7,8 @@ Dadas dos secuencias X e Y, se dice que Z es una scm
 común de X e Y si es scm de X y scm de Y. 
 Diseñe un algoritmo que permita determinar la scm
 de longitud máxima común a dos secuencias.
+
+Complejidad O(n^2)
 */
 
 #include <iostream>
